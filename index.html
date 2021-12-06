@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header class="header container" id="header">
+            <a class="logo" href="#">Albert</a>
+
+            <div class="bx bx-menu" id="menu_icon"></div>
+
+            <ul class="nav_menu">
+                <li class="nav_list"><a href="#home">Home</a></li>
+                <li class="nav_list"><a href="#about">About</a></li>
+                <li class="nav_list"><a href="#services">Services</a></li>
+                <li class="nav_list"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav_list"><a href="#contact">Contact</a></li>
+                <div class="bx bx-moon" id="darkmode"></div>
+            </ul>
+    </header>
+
+    <!-- Home -->
+    <section>
+        <div class="home container" id="home">
+            <div class="home_icon">
+                <a href="https://github.com/AlbertBarnabas10" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/albert-barnabas/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.instagram.com/albertbarnabas_24/" target="_blank"><i class='bx bxl-instagram' ></i></a> 
+            </div>
+            <div class="home_content">
+                <span>Hi, I'm</span>
+                <h2>Albert Barnabas</h2>
+                <h4>Full Stack Developer</h4>
+                <a href="#" class="home_btn">Contact Me</a>
+            </div>
+            <div class="home_img">
+                <img src="assets/img/park-seo-joon_169.png" alt="">
+            </div>
+            <div class="home_scroll">
+                <a href="#about"><i class='bx bx-down-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section>
+        <div class="about container" id="about">
+            <div class="heading">
+                <h2>About Me</h2>
+                <p>Introduction</p>
+            </div>
+            <div class="about_content">
+                <div class="about_img">
+                    <img src="assets/img/park-seo-joon-puji-talenta-anak-muda-indonesia-wXzI80GJJR.jpeg" alt="">
+                </div>
+                <div class="about_text">
+                    <p>Hello Everyone, my name is Albert Barnabas and I am a student in Bina Nusantara University Majoring in Information Systems. 
+                        Short Introduction about me, I am a tech enthusiast who likes to create UI/UX Design, Web Design and Web Application. Besides that,
+                        I like to learn new things wheter it's from the internet or books. You can view or download my CV below.
+                    </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section>
+        <div class="services container" id="services">
+            <div class="heading">
+                <h2>Services</h2>
+                <p>What I offer</p>
+            </div>
+            <div class="services_content">
+                <div class="services_box box_1">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="services_box box_2">
+                    <i class='bx bxl-figma'></i>
+                    <h3>UI / UX Designer</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="services_box box_3">
+                    <i class='bx bxs-data'></i>
+                    <h3>Database Engineer</h3>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section>
+        <div class="portfolio container" id="portfolio">
+            <div class="heading">
+                <h2>Portfolio</h2>
+                <p>My recent works</p>
+            </div>
+            <div class="portfolio_content">
+                <div class="portfolio_certificate">
+
+                </div>
+                <div class="portfolio_full">
+                    <p>See my full portfolio here </p>
+                    <a href="#">Click Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <div class="contact container" id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <p>Feel free to contact me</p>
+            </div>
+            <div class="contact_form">
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Leave a Message..."></textarea>
+                    <input type="button" value="Submit" class="contact_button">
+                </form>
+                <div class="contact_img">
+                    <img src="assets/img/055304600_1533119128-5._Soompi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer_social">
+            <a href="https://github.com/AlbertBarnabas10" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/albert-barnabas/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.instagram.com/albertbarnabas_24/" target="_blank"><i class='bx bxl-instagram' ></i></a> 
+        </div>
+        <div class="footer_cr">
+            <p>&copy Albert Barnabas 2021</p>
+        </div>
+    </footer>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
