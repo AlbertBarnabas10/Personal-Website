@@ -35,14 +35,38 @@ firebase.initializeApp({
 });
 
 var db = firebase.firestore();
-db.collection("Users").add({
-first: "Ada",
-last: "Lovelace",
-born: 1815
+
+
+const button = document.getElementById('button');
+button.addEventListener('click', () =>{
+    const name = document.getElementById('Name');
+    const email = document.getElementById('Email');
+    const message = document.getElementById('Message');
+
+    var isValid = true;
+    if(name.value.length <= 0){
+        isValid = false;
+    }
+    if(email.value.length <= 0){
+        isValid = false;
+    }
+    if(message.value.length <= 0){
+        isValid = false;
+    }
+    if(isValid === true){
+        db.collection("Users").add({
+            first: name.value,
+            email: email.value,
+            message: message.value
+            })
+            .then((docRef) => {
+            console.log("Document written with ID: ", docRef.id);
+            name.value = '';
+            email.value = '';
+            message.value = '';
+            })
+            .catch((error) => {
+            console.error("Error adding document: ", error);
+            });
+    }
 })
-.then((docRef) => {
-console.log("Document written with ID: ", docRef.id);
-})
-.catch((error) => {
-console.error("Error adding document: ", error);
-});
